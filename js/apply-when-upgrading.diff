@@ -1,0 +1,16 @@
+1,3d0
+< var oldJQuery = jQuery;
+< var jQuery = H5P.jQuery;
+< 
+8d4
+< 
+14992,14999d14987
+< 
+< // This is a hack to make ckeditor work inside modal dialogs. Since ckeditor dialogs are placed on body and not in the ui.dialog's DOM. See http://bugs.jqueryui.com/ticket/9087
+< jQuery.widget("ui.dialog", jQuery.ui.dialog, {
+< 	_allowInteraction: function (event) {
+< 		return !!jQuery(event.target).closest('.cke').length || this._super(event);
+< 	}
+< });
+< jQuery = oldJQuery;
+\ No newline at end of file
