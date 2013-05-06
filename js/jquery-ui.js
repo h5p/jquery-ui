@@ -1,5 +1,5 @@
 var oldJQuery = jQuery;
-var jQuery = H5P.jQuery;
+jQuery = H5P.jQuery;
 
 /*! jQuery UI - v1.10.2 - 2013-03-14
 * http://jqueryui.com
@@ -14990,11 +14990,11 @@ $.widget( "ui.tooltip", {
 
 }( jQuery ) );
 
-(function (jQuery) {
+(function ($) {
   // This is a hack to make ckeditor work inside modal dialogs. Since ckeditor dialogs are placed on body and not in the ui.dialog's DOM. See http://bugs.jqueryui.com/ticket/9087
-  jQuery.widget("ui.dialog", jQuery.ui.dialog, {
+  $.widget("ui.dialog", $.ui.dialog, {
     _allowInteraction: function (event) {
-      return !!jQuery(event.target).closest('.cke').length || this._super(event);
+      return !!$(event.target).closest('.cke').length || this._super(event);
     }
   });
 })(jQuery);
