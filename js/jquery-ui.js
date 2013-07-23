@@ -15152,10 +15152,10 @@ $.widget( "ui.tooltip", {
 })(jQuery);
 
 (function ($) {
-  // This is a hack to make ckeditor work inside modal dialogs. Since ckeditor dialogs are placed on body and not in the ui.dialog's DOM. See http://bugs.jqueryui.com/ticket/9087
+  // This is a hack to make stuff like ckeditor work inside modal dialogs. Since ckeditor dialogs are placed on body and not in the ui.dialog's DOM. See http://bugs.jqueryui.com/ticket/9087
   $.widget("ui.dialog", $.ui.dialog, {
     _allowInteraction: function (event) {
-      return !!$(event.target).closest('.cke').length || this._super(event);
+      return true;
     }
   });
 })(jQuery);
