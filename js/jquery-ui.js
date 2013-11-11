@@ -15099,6 +15099,8 @@ $.widget( "ui.tooltip", {
 
     // Simulate the mousemove event
     simulateMouseEvent(event, 'mousemove');
+    
+    event.stopPropagation();
   };
 
   /**
