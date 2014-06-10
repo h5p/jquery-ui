@@ -1032,6 +1032,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 		if (this.options.disabled){
 			this.element.addClass("ui-draggable-disabled");
 		}
+    this.element[0].style.msTouchAction = this.element[0].style.touchAction = 'none';
 
 		this._mouseInit();
 
