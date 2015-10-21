@@ -15150,7 +15150,6 @@ $.widget( "ui.tooltip", {
     // Call the original $.ui.mouse init method
     _mouseInit.call(self);
   };
-
 })(jQuery);
 
 (function ($) {
@@ -15160,6 +15159,8 @@ $.widget( "ui.tooltip", {
       return true;
     }
   });
+
+  $.ui.dialog.prototype._focusTabbable = function () {};
 })(jQuery);
 
 jQuery = oldJQuery;
