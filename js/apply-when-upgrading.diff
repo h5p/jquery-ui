@@ -190,6 +190,7 @@
 +      return true;
 +    }
 +  });
++  $.ui.dialog.prototype._focusTabbable = function () {};
 +})(jQuery);
 +
 +jQuery = oldJQuery;
