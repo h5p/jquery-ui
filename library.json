@@ -10,12 +10,12 @@
   "machineName": "jQuery.ui",
   "preloadedCss": [
     {
-      "path": "development-bundle/themes/base/jquery-ui.css"
+      "path": "h5p-jquery-ui.css"
     }
   ],
   "preloadedJs": [
     {
-      "path": "js/jquery-ui.js"
+      "path": "h5p-jquery-ui.js"
     }
   ]
 }
