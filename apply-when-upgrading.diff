@@ -1,5 +1,5 @@
 --- jquery-ui-original.js	2014-05-09 15:37:46.890181010 +0200
-+++ jquery-ui.js	2014-06-10 11:15:26.992887996 +0200
++++ h5p-jquery-ui.js	2014-06-10 11:15:26.992887996 +0200
 @@ -1,3 +1,6 @@
 +var oldJQuery = jQuery;
 +jQuery = H5P.jQuery;
