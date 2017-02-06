@@ -12,7 +12,10 @@
                         .bind("mouseup."+this.widgetName, this._mouseUpDelegate);
  
 -               event.preventDefault();
-+               //event.preventDefault();
++		if (this.widgetName === 'slider') {
++			// Prevent tragging of slider handle(anchor) in Firefox
++			event.preventDefault();
++		}
  
                 mouseHandled = true;
                 return true;
