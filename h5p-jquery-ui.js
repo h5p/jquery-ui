@@ -920,7 +920,10 @@ $.widget("ui.mouse", {
 			.bind("mousemove."+this.widgetName, this._mouseMoveDelegate)
 			.bind("mouseup."+this.widgetName, this._mouseUpDelegate);
 
-		//event.preventDefault();
+		if (this.widgetName === 'slider') {
+			// Prevent tragging of slider handle(anchor) in Firefox
+			event.preventDefault();
+		}
 
 		mouseHandled = true;
 		return true;
@@ -15099,7 +15102,7 @@ $.widget( "ui.tooltip", {
 
     // Simulate the mousemove event
     simulateMouseEvent(event, 'mousemove');
-    
+
     event.stopPropagation();
   };
 
