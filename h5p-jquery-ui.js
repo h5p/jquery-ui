@@ -1,4 +1,8 @@
-var oldJQuery = jQuery;
+var oldJQuery;
+if (window.jQuery !== undefined) {
+    oldJQuery = jQuery;
+}
+
 jQuery = H5P.jQuery;
 
 /*! jQuery UI - v1.10.2 - 2013-03-14
