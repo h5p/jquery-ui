@@ -19222,7 +19222,7 @@ var jQuery = H5P.jQuery;
 		}
 	});
 
-	$.ui.dialog.prototype._focusTabbable = function () {};
+	jQuery.ui.dialog.prototype._focusTabbable = function () {};
 })(jQuery);
 
 jQuery = oldJQuery;
