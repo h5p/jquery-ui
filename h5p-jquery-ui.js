@@ -19023,7 +19023,7 @@ var jQuery = H5P.jQuery;
 			} );
 			this.liveRegion.remove();
 		}
-	} );
+	});
 
 // DEPRECATED
 // TODO: Switch return back to widget declaration at top of file when this is removed
@@ -19045,13 +19045,7 @@ var jQuery = H5P.jQuery;
 	}
 
 	var widgetsTooltip = $.ui.tooltip;
-
-
-
-
-
-} );
-
+});
 
 /*!
  * jQuery UI Touch Punch 0.2.2
