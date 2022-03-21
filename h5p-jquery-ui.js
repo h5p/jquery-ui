@@ -19050,8 +19050,8 @@ var jQuery = H5P.jQuery;
 
 
 
-
 } );
+
 
 /*!
  * jQuery UI Touch Punch 0.2.2
@@ -19066,7 +19066,7 @@ var jQuery = H5P.jQuery;
 (function ($) {
 
 	// Detect touch support
-	$.support.touch = 'ontouchend' in document;
+	$.support.touch = ('ontouchend' in document || navigator.maxTouchPoints > 0);
 
 	// Ignore browsers without touch support
 	if (!$.support.touch) {
@@ -19122,7 +19122,6 @@ var jQuery = H5P.jQuery;
 	 * @param {Object} event The widget element's touchstart event
 	 */
 	mouseProto._touchStart = function (event) {
-
 		var self = this;
 
 		// Ignore the event if another widget is already being handled
